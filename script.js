@@ -13,12 +13,13 @@ changeSquares.addEventListener('input', () => {
 // apply number of grids change
 const applyButton = document.querySelector('#apply-slider');
 applyButton.addEventListener('click', () => {
-
-    getNumberOfSquares();
+    clearSquares();
+    createNewSquares();
+    colorChange();
 })
 
 
-function getNumberOfSquares() {
+function createNewSquares() {
     numberOfSquares = changeSquares.value;
     createSquares(numberOfSquares);
 }
@@ -38,15 +39,29 @@ function createSquares(numberOfSquares) {
     }
 }
 
+// clears squares, to be used in conjunction with 
 function clearSquares() {
-    
+    gridSquares.textContent = '';
 }
 
+// reset button
+const resetButton = document.querySelector('#reset-button');
+resetButton.addEventListener('click', () => {
+    clearSquares();
+    createNewSquares();
+    colorChange();
+});
+
 // mouseover change color
-const divGrid = document.querySelectorAll('.grids');
-divGrid.forEach((div) => {
-    div.addEventListener('mouseover', () => {
-        div.classList.toggle('color-change');
-    })
-})
+function colorChange() {
+    const divGrid = document.querySelectorAll('.grids');
+    divGrid.forEach((div) => {
+        div.addEventListener('mouseover', () => {
+            div.classList.toggle('color-change');
+        });
+    });
+}
+
+colorChange();
+
 
