@@ -8,18 +8,12 @@ const changeSquares = document.querySelector('.slider');
 const displaySquares = document.querySelector('.number-of-squares');
 changeSquares.addEventListener('input', () => {
     displaySquares.textContent = `${changeSquares.value}x${changeSquares.value}`;
-});
-
-// apply number of grids change
-const applyButton = document.querySelector('#apply-slider');
-applyButton.addEventListener('click', () => {
-    clearSquares();
     createNewSquares();
     colorChange();
-})
-
+});
 
 function createNewSquares() {
+    gridSquares.textContent = '';
     numberOfSquares = changeSquares.value;
     createSquares(numberOfSquares);
 }
@@ -39,15 +33,9 @@ function createSquares(numberOfSquares) {
     }
 }
 
-// clears squares, to be used in conjunction with 
-function clearSquares() {
-    gridSquares.textContent = '';
-}
-
 // reset button
 const resetButton = document.querySelector('#reset-button');
 resetButton.addEventListener('click', () => {
-    clearSquares();
     createNewSquares();
     colorChange();
 });
