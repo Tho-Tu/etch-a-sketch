@@ -11,9 +11,16 @@
     <h1>Etch-a-sketch!</h1>
     <div class="content">
         <div class="left-side">
-            <button type="button" id="number-of-squares"> Choose number of squares </button>
-            <div class="slidecontainer">
-                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            <div class="left-content">
+                <h3>Change number of squares</h3>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+                <div class="number-of-squares">16x16</div>
+                <div>
+                    <button type="button" id="apply-slider">Apply</button>
+                    <button type="button" id="reset-button">Reset</button>
+                </div>
             </div>
         </div>
         <div class="right-side">

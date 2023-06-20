@@ -1,12 +1,27 @@
-// create grid layout
+// create initial grid layout
 const gridSquares = document.querySelector('#grid-squares');
-
 let numberOfSquares = 16;
 createSquares(numberOfSquares);
 
-// function getNumberOfSquares() {
-//     numberOfSquares = 
-// }
+// dynamically change displaySquares text before apply function
+const changeSquares = document.querySelector('.slider');
+const displaySquares = document.querySelector('.number-of-squares');
+changeSquares.addEventListener('input', () => {
+    displaySquares.textContent = `${changeSquares.value}x${changeSquares.value}`;
+});
+
+// apply number of grids change
+const applyButton = document.querySelector('#apply-slider');
+applyButton.addEventListener('click', () => {
+
+    getNumberOfSquares();
+})
+
+
+function getNumberOfSquares() {
+    numberOfSquares = changeSquares.value;
+    createSquares(numberOfSquares);
+}
 
 function createSquares(numberOfSquares) {
     for (let i = 0; i < numberOfSquares; i++) {
@@ -21,6 +36,10 @@ function createSquares(numberOfSquares) {
             column.appendChild(row);
         }
     }
+}
+
+function clearSquares() {
+    
 }
 
 // mouseover change color
