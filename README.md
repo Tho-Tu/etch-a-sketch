@@ -2,4 +2,4 @@
 
 Interactive etch a sketch! <br />
 From the odin project. <br /> 
-I hope your enjoy! 😊😊😊
+I hope you enjoy! 😊😊😊
