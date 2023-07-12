@@ -1,132 +1,138 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: antiquewhite;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: antiquewhite;
 }
 
 h1 {
-    margin: 3rem auto 5rem;
+  margin: 3rem auto 5rem;
 }
 div {
-    margin: 0;
-    /* border: 1px solid; */
+  margin: 0;
+  /* border: 1px solid; */
 }
 
 button {
-    background-color: aquamarine;
-    color: black;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1.5rem;
-    margin: 1rem 0px;
+  background-color: aquamarine;
+  color: black;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  margin: 1rem 0px;
 }
 
 #grid-squares {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: row;
-    border: 1px solid black;
-    width: 600px;
-    height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  border: 1px solid black;
+  width: 600px;
+  height: 600px;
 }
 
-.content{
-    display: flex;
-    gap: 3rem;
-    width: 100vw;
+.content {
+  display: flex;
+  gap: 3rem;
+  width: 100vw;
 }
 
 .left-side {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .left-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
 }
 
 .number-of-squares {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .right-side {
-    flex: 1;
+  flex: 1;
 }
 
 .column {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    flex: 1;
-
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex: 1;
 }
 
 .grids {
-    flex: 1;
-    border: 0.1px solid grey;
+  flex: 1;
+  border: 0.1px solid grey;
 }
 
 .color-change {
-    background-color:#ff7f50;
+  background-color: #ff7f50;
 }
 
 .slidecontainer {
-    width: 100%;
+  width: 100%;
 }
 
 .slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 15px;
-    border-radius: 5px;  
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
 }
-  
+
 .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%; 
-    background: #04AA6D;
-    cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
 }
-  
+
 .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: #04AA6D;
-    cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
 }
 
 #rainbow-color {
-    text-decoration: none;
-    color: #FFF;
-    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-    border-radius: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight:b old;
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(
+    90deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 80%,
+    #00c0ff 100%
+  );
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
 }

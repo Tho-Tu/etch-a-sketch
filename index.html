@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-a-sketch</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Etch-a-sketch!</h1>
     <div class="content">
-        <div class="left-side">
-            <div class="left-content">
-                <h3>Change number of squares</h3>
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
-                </div>
-                <div class="number-of-squares">16x16</div>
-                <div>
-                    <button type="button" id="reset-button">Reset</button>
-                </div>
-                <br><br>
-                <h3>Choose your own color</h3>
-                <div>
-                    <input type="color" id="choose-color" value="#ff7f50">
-                </div>
-                <div>
-                    <button type="button" id="random-color">I'm feeling lucky</button>
-                </div>
-                <div>
-                    <button type="button" id="rainbow-color">Colors of the rainbow</button>
-                </div>
-            </div>
+      <div class="left-side">
+        <div class="left-content">
+          <h3>Change number of squares</h3>
+          <div class="slidecontainer">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="16"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+          <div class="number-of-squares">16x16</div>
+          <div>
+            <button type="button" id="reset-button">Reset</button>
+          </div>
+          <br /><br />
+          <h3>Choose your own color</h3>
+          <div>
+            <input type="color" id="choose-color" value="#ff7f50" />
+          </div>
+          <div>
+            <button type="button" id="random-color">I'm feeling lucky</button>
+          </div>
+          <div>
+            <button type="button" id="rainbow-color">
+              Colors of the rainbow
+            </button>
+          </div>
         </div>
-        <div class="right-side">
-            <div id="grid-squares"></div>
-        </div>
+      </div>
+      <div class="right-side">
+        <div id="grid-squares"></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
